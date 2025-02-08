@@ -2,13 +2,18 @@ import os
 import pickle #pre trained model loading
 import streamlit as st   # web app
 from streamlit_option_menu import option_menu
+
+# Set page configuration
 st.set_page_config(page_title='Prediction of Disease Outbreak',
                    layout='wide',
                    page_icon="🧑‍⚕")
+
+# loading the saved models
 diabetes_model=pickle.load(open(r"D:\project ict\training_models\save_model\diabetes_model.sav","rb"))
 heart_disease_model=pickle.load(open(r"D:\project ict\training_models\save_model\heart_disease_model.sav","rb"))
 parkinsons_model=pickle.load(open(r"D:\project ict\training_models\save_model\parkinsons_model.sav","rb"))
 
+# sidebar for navigation
 with st.sidebar:
     selected= option_menu('prediction of disease outbreak system',
                          ['Diabetes Prediction','Heart Disease Prediction','Parkinsons Prediction'],
