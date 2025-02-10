@@ -195,7 +195,7 @@ if selected == "Parkinsons Prediction":
     # creating a button for Prediction
     if st.button("Parkinson's Test Result"):
         
-        user_input= [fo, fhi,Jitter_percent,Jitter_Abs,
+        user_input= [fo, fhi,flo,Jitter_percent,Jitter_Abs,
                      RAP, PPQ,DDP,Shimmer,Shimmer_dB,APQ3,APQ5,
                      APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]
         
