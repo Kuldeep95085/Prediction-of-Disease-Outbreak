@@ -9,9 +9,9 @@ st.set_page_config(page_title='Prediction of Disease Outbreak',
                    page_icon="🧑‍⚕")
 
 # loading the saved models
-diabetes_model = pickle.load(open("/Users/kuldeepraj45/Desktop/victus/project_kul/model/save model/diabetes_model.sav","rb"))
-heart_disease_model = pickle.load(open("/Users/kuldeepraj45/Desktop/victus/project_kul/model/save model/heart_disease_model.sav", "rb"))
-parkinsons_model = pickle.load(open("/Users/kuldeepraj45/Desktop/victus/project_kul/model/save model/parkinsons_model.sav", "rb"))
+diabetes_model = pickle.load(open("save_model/diabetes_model.sav","rb"))
+heart_disease_model = pickle.load(open("save_model/heart_disease_model.sav", "rb"))
+parkinsons_model = pickle.load(open("save_model/parkinsons_model.sav", "rb"))
 
 # sidebar for navigation
 with st.sidebar:
